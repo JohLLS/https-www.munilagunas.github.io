@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Municipalidad Distrital Lagunas</title>
+    <link rel="shortcut icon" type="image/png" href="foic/logoLagunas.png">
+
+	<script src="https://kit.fontawesome.com/8041c8f965.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo1.css">
+
+</head>
+<body>
+	<header>
+		<div id="primero">
+			<h2><em>"Año de la unidad, la Paz y el Desarrollo"</em><a href="https://www.gob.pe/munilagunas-chiclayo"><img src="img/Transp.png" align="right" width="120" height="40"></a></h2>
+		</div>
+		
+
+		<div id="segundo">
+			<nav class="navbar">
+			<a href="Municipalidad.html"><img src="foic/logoLagunas2-1.png" align="left" width="10%" height="10%"></a>
+			<br/>
+			<aside id="log" style="float: right">				
+					<a href="login.html"><i class="fa-solid fa-user fa-fade fa-xl" style="color: #00ac96;"></i></a>
+			</aside>
+
+			<ul style="float: right;">
+				<li><a id="men" href="Municipalidad.html"> Inicio </a></li>
+				<li><a id="men" href="MiLagunas.html"> Mi Lagunas </a></li>
+				<li><a id="men" href="Noticias.html"> Noticias </a></li>
+				<li><a id="men" href="Documentacion.html"> Documentación </a></li>
+				<li><a id="men" href="Gestion.html"> Gestión </a></li>
+				
+				<li class="dezplegado"><a id="men"><span> Contacta con Nosotros </span></a>
+					<ul>
+						<li><a id="men" href="Denuncias.html"> Denuncias </a></li>
+						<li><a id="men" href="Tramites.html"> Tramites </a></li>	
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+		<br/><br/>
+		</div>
+	</header>
+
+	<h1>Consultas<a href="https://www.facebook.com/MunideLagunas">
+		<aside id="log" style="float: right">				
+			<a href="https://www.facebook.com/MunideLagunas" target="_blank"><i class="fa-brands fa-facebook" style="color: #005eff;"></i></a>
+		</aside></a>
+	</h1>
+	<center><span>Municipalidad Distrital de Lagunas</span> |
+	<span>Departamento de Lambayeque, Provincia de Chiclayo</span>
+	<p>Escríbenos aquí tus dudas, sugerencias y consultas para poder comunicarnos contigo.</p></center>
+	<form method="POST" action="datos.php">
+		<fieldset>
+		<legend><h3>Datos Personales</h3></legend>
+		<ol>
+			<li><strong>Tipo de Documento:</strong></li>
+			<select>
+				<option selected="selected">-- Selecciona una opción --</option>
+				<option>DNI</option>
+				<option>Carné de extranjería</option>
+				<option>Pasaporte</option>
+				<option>RUC (de personal natural)</option>
+			</select>
+				<br/><br/>
+			<li><strong>Número de documento:</strong></li><label for="text"><input id="NDocum" type="text" name="documento" size="22" maxlength="20">
+				<br/><br/>
+			<li><strong>Nombres: </li><label for="text"><input id="Nombr" type="text" name="Nombres" size="22" maxlength="20"></strong>
+				<br/><br/>
+			<li><strong>Apellido Materno:</strong></li><label for="text"><input id="ApellidoM" type="text" name="ApellidoMa" size="22" maxlength="20">
+				<br/><br/>
+			<li><strong>Apellido Paterno:</strong></li><label for="text"><input id="ApellidoP" type="text" name="ApellidoPa" size="22" maxlength="20">
+			<br/><br/>
+			<li><strong>Teléfono / Celular: </li><label for="text"><input id="Nombr" type="natural" name="numContac" size="22" maxlength="20"></strong>
+				<br/><br/>
+			<li><strong>Correo Electrónico:</strong></li><label for="text"><input id="Correo" type="email" name="Email" size="22" maxlength="20">
+				<br/><br/>
+		</ol>
+		</fieldset>
+		<br/>
+
+		<fieldset>
+		<legend><h3>Características de la Consulta</h3></legend>
+		<ol>
+			<li><strong>Selecione el Área de interes:</strong></li>
+			<select>
+				<option selected="selected">-- Selecciona una opción --</option>
+				<option>Op1</option>
+				<option>Op2</option>
+				<option>Op3</option>
+				<option>Op4</option>
+			</select>
+				<br/><br/>
+			<li><strong>Motivo de la Consulta:</strong></li><label for="text"><input id="Motivo" type="text" name="Motiv" size="22" maxlength="20">
+				<br/><br/>
+			<li><strong>Comentarios adicionales</strong></li>
+			<textarea cols="40" rows="6"></textarea><br/><br/>
+		</ol>
+		</fieldset>
+		<br/>
+		<br/>
+		<input type="submit" name="envio" value="ENVIAR">
+		<input type="reset" name="reseteo" value="BORRAR">
+
+	<footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4><i class="fa-solid fa-phone" style="color: #005eff;"></i> Teléfono</h4>
+                    <p>074 614-315</p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa-regular fa-envelope" style="color: #005eff;"></i> Email</h4>
+                    <p><a href="mailto:municipalidaddelagunasmocupe@gmail.com"> municipalidaddelagunasmocupe@gmail.com</a></p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa-brands fa-facebook" style="color: #005eff;"></i> Facebook</h4>
+                    <p><a href="https://www.facebook.com/MunideLagunas" target="_blank"> Municipalidad Distrital de Lagunas</a></p>
+                </div>
+            </div>
+            <h2 class="titulo-final">Copyright &copy; 2023 Equipo de desarrollo UTP</h2>
+    </footer>
+</body>
+</html>
